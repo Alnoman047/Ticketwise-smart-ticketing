@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicketWise</title>
+    <!-- daisy ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+<!-- fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<!-- styles -->
+<link rel="stylesheet" href="styles/style.css">
+
+<style>
+    /* font */
+    .font-raleway{
+        font-family: "Raleway", sans-serif;
+    }
+
+    .font-inter{
+        font-family: "Inter", sans-serif;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <!-- navbar starts here -->
+        <section class="navbar mx-auto lg:px-24 px-8">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 font-semibold">
+                      <li><a>Home</a></li>
+                      
+                      <li><a>About</a></li>
+                      <li><a>Destination</a></li>
+                      <li><a>Search</a></li>
+                    </ul>
+                  </div>
+                  <a class="btn btn-ghost text-2xl font-raleway font-extrabold">TicketWise</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    
+                    <li><a>About</a></li>
+                    <li><a>Destination</a></li>
+                    <li><a>Search</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                  <a class="btn ">Button</a>
+                </div>
+              </div>
+        </section>
+        <!-- navbar ends here -->
+
+        <!-- banner starts here -->
+        <section class="banner">
+
+        </section>
+        <!-- banner ends here -->
+    </header>
+
+    <main>
+        <!-- best offer starts here -->
+        <section class="best offer">
+
+        </section>
+        <!-- best offer ends here  -->
+
+        <!-- ticket section starts here -->
+        <section class="ticket">
+            <!-- bus details starts here -->
+            <div class="bus-details">
+
+            </div>
+            <!-- bus details ends here -->
+
+            <!-- ticket purchase section starts here -->
+            <div class="ticket-purchase">
+
+            </div>
+            <!-- ticket purchase section ends here -->
+        </section>
+    </main>
+    <script src="script/ticket-calc.js"></script>
+    <script src="script/utility.js"></script>
+</body>
+</html>
