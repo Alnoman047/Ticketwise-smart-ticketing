@@ -24,6 +24,19 @@
     .font-inter{
         font-family: "Inter", sans-serif;
     }
+
+    .dashed-2 {
+        border: none;
+        height: 1px;
+        background: #0d0d1233;
+        background: repeating-linear-gradient(
+          90deg,
+          #0d0d1233,
+          #0d0d1233 6px,
+          transparent 6px,
+          transparent 12px
+        );
+      }
 </style>
 </head>
 <body>
@@ -56,31 +69,129 @@
                   </ul>
                 </div>
                 <div class="navbar-end">
-                  <a class="btn ">Button</a>
+                  <a class="btn bg-[#1DD10033] text-[#1DD100] border-[#1DD100]">Bus
+                    <img src="images/bus-icon.png" alt="">
+                  </a>
                 </div>
               </div>
         </section>
         <!-- navbar ends here -->
 
         <!-- banner starts here -->
-        <section class="banner">
+        <section class="banner mx-auto ">
+            <div class="banner-img  bg-[url('images/banner.png')] h-[550px] bg-no-repeat w-full bg-center relative">
+                <div class="banner-content  flex flex-col justify-items-center items-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                    <h2 class="text text-6xl text-white font-extrabold text-center -mt-44 font-raleway">End-to-End Travel with 
+                        <br>
+                        <span class="text-[#1DD100]">P Paribahan</span> </h2>
+                        <p class=" text-white font-semibolds text-center font-inter">Explore P Paribahan's comprehensive transportation services: routes, fares, schedules,
+                            <br> online booking, and reliable travel solutions for your convenience.</p>
+                            <!-- <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-[#1DD100] border-[#1DD100]">Responsive</button> -->
+                            <button class="btn btn-success btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-[#1DD100] border-[#1DD100] w-[170px] h-[65px] font-raleway">Buy Tickets</button>
 
+                </div>
+            </div>
         </section>
         <!-- banner ends here -->
     </header>
 
     <main>
         <!-- best offer starts here -->
-        <section class="best offer">
+        <section class="best offer mx-auto lg:px-44 px-8">
+            <h2 class="text-4xl font-bold text-black font-raleway text-center mt-44">Best offers for you</h2>
+            <div class="offers flex justify-between gap-8 mt-4">
+                <div class="offer-new w-1/2 relative">
+                    <img src="images/coupon 1.svg" alt="">
+                   <div class="new-coupon-contents flex justify-between ">
+                    <div class="offer-conent-single absolute top-1/4 left-1/4 -translate-x-1/4 -translate-y-1/4 gap-x-12">
+                        
+                        <h2 class="font-inter text-3xl text-black font-bold">15% OFF</h2>
+                        <h4 class="font-inter font-semibold text-xl text-black">on your next purchase</h4>
+                        <p>use by January 2024</p>
+                    </div>
+                    <div class="new-coupon absolute top-1/4 right-1/4 -translate-x-1/4 -translate-y-1/4">
+                        <h2 class="font-raleway text-3xl text-black font-bold">NEW15</h2>
+                        <p>Coupon Code</p>
+                    </div>
+                   </div>
+                    
+                </div>
+                <div class="offer-couple w-1/2 relative">
+                    <img src="images/coupon 2.svg" alt="">
+                   <div class="new-coupon-contents flex justify-between absolute top-1/4 left-1/4 -translate-x-1/4 -translate-y-1/4 gap-x-12">
+                    <div class="offer-conent-single">
+                        
+                        <h2 class="font-inter text-3xl text-black font-bold">20% OFF</h2>
+                        <h4 class="font-inter font-semibold text-xl text-black">on your next purchase</h4>
+                        <p>use by January 2024</p>
+                    </div>
+                    <div class="new-coupon">
+                        <h2 class="font-raleway text-3xl text-black font-bold">Couple20</h2>
+                        <p>Coupon Code</p>
+                    </div>
+                   </div>
+                    
+                </div>
+            </div>
+            <a class="btn bg-[#1DD10033] text-[#1DD100] border-[#1DD100] mt-6">See All Offers
+              </a>
 
         </section>
         <!-- best offer ends here  -->
 
         <!-- ticket section starts here -->
-        <section class="ticket">
+        <section class="ticket bg-[#F7F8F8]  border-t-[#1DD100] rounded-t-3xl">
+            <div class="">
+                <h3 class="text-4xl font-bold text-black font-raleway text-center mt-44 pt-24">P.H Paribahan</h3>
+                <p class=" text-black font-semibolds text-center font-inter">Explore P Paribahan's comprehensive transportation services: routes, fares, schedules,
+                    <br> online booking, and reliable travel solutions for your convenience.</p>
+            </div>
             <!-- bus details starts here -->
-            <div class="bus-details">
-
+            <div class="bus-details bg-white h-[418px] w-[1170px] mx-auto  px-8 flex justify-between mt-10">
+                <div class="bus-details w-2/3">
+                   <div class="bus-inq flex justify-between ">
+                    <div class="flex justify-start mt-6">
+                        <img src="images/bus-logo.png" alt="">
+                        <div>
+                            <h2>GreenLine Paribahan</h2>
+                        <p>Coach-009-WEB ! AC_Business</p>
+                        </div>
+                    </div>
+                    <div class="flex">
+                        <a class="btn bg-[#1DD10033] text-[#1DD100] border-[#1DD100] mt-6 -mr-14"><span>40</span> seats Left
+                        </a>
+                    </div>
+                   </div>
+                   <div class="bus-destination bg-[#F7F8F8] h-[250px] w-[800px] rounded-lg mt-8 py-3">
+                    <div class="flex justify-between py-3 px-6">
+                        <h2>Route</h2>
+                        <h2>Dhaka - Sylhet</h2>
+                    </div>
+                    <hr class="dashed-2 w-[740px] ">
+                    <div class="flex justify-between py-3 px-6">
+                        <p>Departure Time</p>
+                        <p>9:00 PM</p>
+                    </div>
+                    <hr class="dashed-2 w-[740px] ">
+                    <div class="flex justify-between w-[720px] pl-5 py-6">
+                        <a class="btn bg-[#03071233] mt-6 -mr-14">Boarding Point - Laxmipur
+                        </a>
+                        <a class="btn bg-[#03071233] mt-6 -mr-14">Dropping Point - Bogura
+                        </a>
+                        <a class="btn bg-[#03071233] mt-6 -mr-14">Est. Time - 11 Hour
+                        </a>
+                    </div>
+                   </div>
+                </div>
+                <div class="bus-devider -ml-10">
+                    <img src="images/info-devider.png" alt="">
+                </div>
+                <div class="seat-price flex flex-col">
+                    <img class="h-[50px] w-[50px]" src="images/fare.png" alt="">
+                    <h3 class="font-raleway font-bold text-2xl">550 Taka</h3>
+                    <p>Per Seat</p>
+                </div>
+                
             </div>
             <!-- bus details ends here -->
 
