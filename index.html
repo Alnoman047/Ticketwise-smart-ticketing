@@ -123,7 +123,7 @@
               convenience.
             </p>
             <!-- <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-[#1DD100] border-[#1DD100]">Responsive</button> -->
-            <button
+            <button id="buyTickets" onclick="buyTicket(ticketPurchase)"
               class="btn btn-success btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-[#1DD100] border-[#1DD100] hover:bg-[#1DD100] w-[170px] h-[65px] font-raleway"
             >
               Buy Tickets
@@ -226,7 +226,7 @@
               <div class="flex">
                 <a
                   class="btn bg-[#1DD10033] text-[#1DD100] border-[#1DD100] mt-6 -mr-14"
-                  ><span>40</span> seats Left
+                  ><span id="seatLeft">40</span> seats Left
                 </a>
               </div>
             </div>
@@ -268,8 +268,8 @@
         <!-- bus details ends here -->
 
         <!-- ticket purchase section starts here -->
-        <div
-          class="ticket-purchase bus-details bg-white h-[1055px] w-[1170px] mx-auto flex gap-4 mt-10"
+        <div id="ticketPurchase" onclick="buyTicket(buyTickets)"
+          class=" bus-details bg-white h-[1055px] w-[1170px] mx-auto flex gap-4 mt-10"
         >
           <div class="seat-availability w-3/5 p-2">
             <h2>select your Seat</h2>
@@ -290,13 +290,13 @@
                   <img src="images/wheel.png" alt="" />
                 </button>
               </div>
-              <div id="a" class="flex justify-between mt-4">
+              <div id="selectSeat" class="flex justify-between mt-4">
                 <div class="flex text-center items-center gap-6">
                   <p>A</p>
-                  <button id="a1" class="btn hover:bg-[#1DD100] w-[130px]">
+                  <button id="add-btn" class="btn hover:bg-[#1DD100] w-[130px]">
                     A1
                   </button>
-                  <button id="a2" class="btn hover:bg-[#1DD100] w-[130px]">
+                  <button id="add-btn" class="btn hover:bg-[#1DD100] w-[130px]">
                     A2
                   </button>
                 </div>
@@ -309,7 +309,7 @@
                   </button>
                 </div>
               </div>
-              <div id="b" class="flex justify-between mt-4">
+              <div id="selectSeat" class="flex justify-between mt-4">
                 <div class="flex text-center items-center gap-6">
                   <p>B</p>
                   <button id="b1" class="btn hover:bg-[#1DD100] w-[130px]">
@@ -328,7 +328,7 @@
                   </button>
                 </div>
               </div>
-              <div id="c" class="flex justify-between mt-4">
+              <div id="selectSeat" class="flex justify-between mt-4">
                 <div class="flex text-center items-center gap-6">
                   <p>C</p>
                   <button id="c1" class="btn hover:bg-[#1DD100] w-[130px]">
@@ -347,7 +347,7 @@
                   </button>
                 </div>
               </div>
-              <div id="d" class="flex justify-between mt-4">
+              <div id="selectSeat" class="flex justify-between mt-4">
                 <div class="flex text-center items-center gap-6">
                   <p>D</p>
                   <button id="d1" class="btn hover:bg-[#1DD100] w-[130px]">
@@ -366,7 +366,7 @@
                   </button>
                 </div>
               </div>
-              <div id="e" class="flex justify-between mt-4">
+              <div id="selectSeat" class="flex justify-between mt-4">
                 <div class="flex text-center items-center gap-6">
                   <p>E</p>
                   <button id="e1" class="btn hover:bg-[#1DD100] w-[130px]">
@@ -385,7 +385,7 @@
                   </button>
                 </div>
               </div>
-              <div id="f" class="flex justify-between mt-4">
+              <div id="selectSeat" class="flex justify-between mt-4">
                 <div class="flex text-center items-center gap-6">
                   <p>A</p>
                   <button id="f1" class="btn hover:bg-[#1DD100] w-[130px]">
@@ -404,7 +404,7 @@
                   </button>
                 </div>
               </div>
-              <div id="g" class="flex justify-between mt-4">
+              <div id="selectSeat" class="flex justify-between mt-4">
                 <div class="flex text-center items-center gap-6">
                   <p>G</p>
                   <button id="g1" class="btn hover:bg-[#1DD100] w-[130px]">
@@ -423,7 +423,7 @@
                   </button>
                 </div>
               </div>
-              <div id="h" class="flex justify-between mt-4">
+              <div id="selectSeat" class="flex justify-between mt-4">
                 <div class="flex text-center items-center gap-6">
                   <p>H</p>
                   <button id="h1" class="btn hover:bg-[#1DD100] w-[130px]">
@@ -442,7 +442,7 @@
                   </button>
                 </div>
               </div>
-              <div id="i" class="flex justify-between mt-4">
+              <div id="selectSeat" class="flex justify-between mt-4">
                 <div class="flex text-center items-center gap-6">
                   <p>_I</p>
                   <button id="i1" class="btn hover:bg-[#1DD100] w-[130px]">
@@ -461,7 +461,7 @@
                   </button>
                 </div>
               </div>
-              <div id="j" class="flex justify-between mt-4">
+              <div id="selectSeat" class="flex justify-between mt-4">
                 <div class="flex text-center items-center gap-6">
                   <p>_J</p>
                   <button id="i1" class="btn hover:bg-[#1DD100] w-[130px]">
