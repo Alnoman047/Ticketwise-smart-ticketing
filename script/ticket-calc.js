@@ -12,7 +12,7 @@ function toggleSeat(seat) {
   }
   
   const allSeat = document.getElementsByClassName("seat");
-  let count = 40;
+  let count = 8;
   
   for (const seat of allSeat) {
     seat.addEventListener("click", function (e) {
